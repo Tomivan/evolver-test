@@ -25,9 +25,9 @@ input{
     border: 0.5px solid #4f4f4f;
     border-radius: 5px;
 }
-.search{
+/* .search{
     display: flex;
-}
+} */
 .serach-icon{
     position: absolute;
 }
@@ -157,6 +157,8 @@ p{
     width: 30%;
     background: none;
     border: none;
+    margin-top: -1%;
+    margin-left: 0;
 }
 .subscribe{
     height: 6vh;
@@ -169,6 +171,7 @@ p{
 .hr{
     width: 40%;
     margin-left: 0;
+    margin-top: 6%;
 }
 .mail-heading{
     display: flex; 
@@ -241,4 +244,147 @@ p{
     height: 2.3vh;
     margin-top: 3%;
     padding: .5em;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+    .navigation{
+        margin-left: 12%;
+    }
+    .logo{
+        width: 15%;
+    }
+    .search{
+        margin-top: 2%;
+    }
+    .bottom-nav{
+        margin-left: -20%;
+    }
+    ul{
+        display: flex;
+        margin-left: 7%;
+        flex-wrap: wrap;
+    }
+    .background-image{
+        display: none;
+    }
+    .card{
+        position: absolute;
+        box-shadow: 0px 0px 44px rgba(0,0,0,0.1);
+        margin-left: 4%;
+        padding: 1.5em;
+        width: 70%;
+        height: 40vh;
+        margin-top: 0;
+    }
+    .proceed{
+        height: 8vh;
+        width: 90%;
+    }
+    .space{
+        margin-top: 100%;
+    }
+    .link{
+        margin-top: 6%;
+        margin-left: 3%;
+    }
+    .apartments, .lights{
+        flex-direction: column;
+    }
+    .apartment-image{
+        width: 100%;
+    }
+    .apartment-button{
+        margin-top: 45%;
+        margin-left: -85%;
+        width: 30%;
+    }
+    .category-image{
+        width: 100%;
+    }
+    .category-button{
+        margin-top: 45%;
+        margin-left: -80%;
+        width: 35%;
+    }
+    .top, .bottom{
+        flex-direction: column;
+    }
+    .mailing{
+        width: 92%;
+        margin-top: 5%;
+        height: 70vh;
+    }
+    .hr{
+        width: 80%;
+        margin-top: 60%;
+    }
+    .subscribe{
+        width: 100%;
+    }
+    .mail-image{
+        height: 70vh;
+    }
+    .input::placeholder{
+        padding-left: 1.5em;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .contact{
+        display: none;
+    }
+}
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .card{
+        height: 48vh;
+    }
+    .space{
+        margin-top: 110%;
+    }
+    .products, .on-sale{
+        margin-left: 5%;
+        width: 88%;
+    }
+    .mailing, .mail-image{
+        margin-left: 5%;
+        height: 75vh;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .bottom-nav{
+        margin-left: -10%;
+    }
+    .background-image{
+        display: block;
+    }
+    .card{
+        height: 30vh;
+        margin-left: 9%;
+        margin-top: -90%;
+        width: 40%;
+        height: 25vh;
+    }
+    .space{
+        margin-top: 0;
+    }
+    .link{
+        margin-top: 3%;
+    }
+    .mailing{
+        margin-left: 7%;
+        height: 35vh;
+    }
+    .hr{
+        margin-top: 30%;
+    }
+    .input::placeholder{
+        padding-left: 4em;
+    }
+    .mail-image{
+        height: 35vh;
+    }
+
 }
